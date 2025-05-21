@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MorCondoApp.Application\MorCondoApp.Application.csproj" />
+    <ProjectReference Include="..\MorCondoApp.Infrastructure\MorCondoApp.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

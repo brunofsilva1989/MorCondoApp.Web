@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MorCondoApp.Domain\MorCondoApp.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\ProcsUsuario\" />
+    <Folder Include="Data\ProcsTransacaoDetalhada\" />
+    <Folder Include="Data\ProcsSaida\" />
+    <Folder Include="Data\ProcsProprietario\" />
+    <Folder Include="Data\ProcsManutencaoPredial\" />
+    <Folder Include="Data\ProcsHistoricoManutencao\" />
+    <Folder Include="Data\ProcsEntrada\" />
+    <Folder Include="Data\ProcsDocumento\" />
+    <Folder Include="Data\ProcsBoleto\" />
+    <Folder Include="Data\ProcsMorador\" />
+    <Folder Include="Data\ProcsCondominio\" />
+  </ItemGroup>
+
+</Project>
