@@ -7,6 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\ProcsCliente\sp_CriarClientes.sql" />
+    <None Remove="Data\ProcsCliente\sp_DeletarCliente.sql" />
+    <None Remove="Data\ProcsCliente\sp_ListarClientes.sql" />
+    <None Remove="Data\ProcsCliente\sp_UpdateCliente.sql" />
+    <None Remove="Data\ProcsLogin\sp_AutenticarUsuario.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data\ProcsCliente\sp_CriarClientes.sql" />
+    <EmbeddedResource Include="Data\ProcsCliente\sp_DeletarCliente.sql" />
+    <EmbeddedResource Include="Data\ProcsCliente\sp_ListarClientes.sql" />
+    <EmbeddedResource Include="Data\ProcsCliente\sp_UpdateCliente.sql" />
+    <EmbeddedResource Include="Data\ProcsLogin\sp_AutenticarUsuario.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.5" />
   </ItemGroup>

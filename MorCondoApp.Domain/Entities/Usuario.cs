@@ -14,10 +14,10 @@ namespace MorCondoApp.Domain.Entities
         public string SenhaHash { get; set; }
         public TipoUsuario Tipo { get; set; }
         public int UsuarioId { get; set; }
-        public int CondomiioId { get; set; }
-        public int ClienteId { get; set; }
+        public int CondominioId { get; set; }        
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; }
+        public int ClienteId { get; set; }
         public string Status { get; set; } = "Ativo";
     }
 

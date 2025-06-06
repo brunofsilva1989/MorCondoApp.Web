@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MorCondoApp.Infrastructure.Services;
 using System.Runtime.CompilerServices;
 
 namespace MorCondoApp.Web.Controllers
 {
+    [Authorize]
     public class ClienteController : Controller
     {
         private readonly IClienteService _clienteService;
@@ -11,7 +13,6 @@ namespace MorCondoApp.Web.Controllers
         {
             _clienteService = clienteService;
         }
-
 
         public async Task<IActionResult> Index()
         {
